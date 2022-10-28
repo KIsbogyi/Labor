@@ -1,5 +1,6 @@
 package com.base;
 import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -12,6 +13,7 @@ import javax.swing.event.DocumentListener;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
+
 
 public class CaesarFrame extends JFrame {
     private JTextField t0 = new JTextField("", 20);
@@ -76,7 +78,7 @@ public class CaesarFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         FlowLayout layout = new FlowLayout();
-        setLayout(layout);
+        setLayout(new GridLayout(2,1));
         JLabel l0 = new JLabel("Output:");
         
         JPanel p0 = new JPanel();
